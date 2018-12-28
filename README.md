@@ -1,9 +1,15 @@
-## all-in-one
+# all-in-one
 
->  完整的跨平台项目
->  pc: web + win + mac 
->  wx: h5 + android + ios
->  server: nodejs + mongodb + nginx + pm2
+  >  完整的跨平台项目
+
+```  
+    pc: web + win + mac 
+
+    wx: h5 + android + ios
+
+    server: nodejs + mongodb + nginx + pm2
+
+```
 
 ### 开发目录结构
 
@@ -24,10 +30,13 @@
 
 1. 配置服务器环境
 
+```
     node.js  ^10.14.0
     express  ^4.16.0
     mongodb  ^4.0.0
     mongoose ^ 5.2.16
+
+```
     
 2. 构建angular
 
