@@ -12,6 +12,9 @@ app-ionic/plugins
 app-ionic/platforms
 app-ionic/.sourcemaps
 
+#prod
+dist/
+
 # Runtime data
 pids
 *.pid
