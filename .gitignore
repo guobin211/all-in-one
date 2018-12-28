@@ -5,6 +5,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+#node_modules
+app-angular/node_modules
+app-ionic/node_modules
+app-ionic/plugins
+app-ionic/platforms
+app-ionic/.sourcemaps
+
 # Runtime data
 pids
 *.pid

@@ -1,0 +1,7 @@
+{
+  "name": "all-in-one",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

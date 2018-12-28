@@ -1,0 +1,43 @@
+{
+  "name": "all-in-one",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node dist/app",
+    "start:watch": "npx nodemon dist/app",
+    "build": "npx tsc",
+    "build:watch": "npx tsc -w",
+    "copy-static": "ts-node copyStatic.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "body-parser": "1.18.3",
+    "compression": "1.7.3",
+    "cookie-parser": "1.4.3",
+    "cors": "2.8.5",
+    "dotenv": "6.2.0",
+    "express": "4.16.4",
+    "helmet": "3.15.0",
+    "mongoose": "5.3.16",
+    "morgan": "1.9.1",
+    "shelljs": "0.8.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.2",
+    "@types/body-parser": "1.17.0",
+    "@types/compression": "0.0.36",
+    "@types/cookie-parser": "1.4.1",
+    "@types/cors": "2.8.4",
+    "@types/debug": "0.0.31",
+    "@types/express": "4.16.0",
+    "@types/helmet": "0.0.42",
+    "@types/mongoose": "5.3.4",
+    "@types/morgan": "1.7.35",
+    "@types/node": "8.5.5",
+    "@types/shelljs": "^0.8.1",
+    "nodemon": "1.18.8",
+    "ts-node": "^5.0.1",
+    "tslint": "5.11.0",
+    "typescript": "3.2.2"
+  }
+}
