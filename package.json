@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node dist/app",
-    "start:watch": "npx nodemon dist/app",
+    "start": "node dist/server",
+    "start:watch": "npx nodemon dist/server",
     "build": "npx tsc",
     "build:watch": "npx tsc -w",
     "copy-static": "ts-node copyStatic.ts"

@@ -3,11 +3,11 @@
   >  完整的跨平台项目
 
 ```  
-    pc: web + win + mac 
+    桌面: web + win + mac 
 
-    wx: h5 + android + ios
+    移动: h5 + android + ios
 
-    server: nodejs + mongodb + nginx + pm2
+    后段: nodejs + mongodb + nginx + pm2
 
 ```
 
