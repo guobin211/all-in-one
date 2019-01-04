@@ -7,7 +7,19 @@
 
     移动: h5 + android + ios
 
-    后段: nodejs + mongodb + nginx + pm2
+    后端: nodejs + mongodb + nginx + pm2
+
+```
+
+### 开发测试
+
+``` 
+    // api文档
+    http://localhost:3000/api
+
+    http://localhost:3000/pc
+
+    http://localhost:3000/h5
 
 ```
 
@@ -20,7 +32,7 @@
       
     src           -- nodejs 服务端
 
-    copyStatic.ts   -- 复制静态资源文件
+    copyStatic.ts   -- 部署配置
 
     nginx.conf      -- nginx 配置文件
 
