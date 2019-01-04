@@ -12,6 +12,9 @@ app-ionic/plugins
 app-ionic/platforms
 app-ionic/.sourcemaps
 
+app-angular/dist
+app-angular/release
+
 #prod
 dist/
 
