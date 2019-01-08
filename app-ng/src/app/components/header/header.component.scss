@@ -1,0 +1,19 @@
+@import"../../styles/color.scss";
+
+.header{
+  height: 60px;
+  background: $primary;
+  color: $default;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  .left{
+    position: absolute;
+    left: 15px;
+  }
+  .right{
+    position: absolute;
+    right: 25px;
+  }
+}

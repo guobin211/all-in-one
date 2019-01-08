@@ -3,7 +3,7 @@
   >  完整的跨平台项目
 
 ```  
-    桌面: web + win + mac 
+    桌面: web + win + mac + linux
 
     移动: h5 + android + ios
 
