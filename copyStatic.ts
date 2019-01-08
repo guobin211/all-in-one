@@ -1,5 +1,12 @@
 import * as shell from 'shelljs';
 
+shell.rm('-rf', 'dist/public/js');
+shell.rm('-rf', 'dist/public/css');
+shell.rm('-rf', 'dist/public/fonts');
+shell.rm('-rf', 'dist/public/api');
+shell.rm('-rf', 'dist/public/pc');
+shell.rm('-rf', 'dist/public/h5');
+
 /**
  * copy static file
  */

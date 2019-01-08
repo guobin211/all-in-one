@@ -1,6 +1,6 @@
 # all-in-one
 
-  >  完整的跨平台项目
+完整的跨平台项目
 
 ```  
     桌面: web + win + mac + linux
@@ -17,8 +17,10 @@
     // api文档
     http://localhost:3000/api
 
+    // pc端
     http://localhost:3000/pc
 
+    // 移动端
     http://localhost:3000/h5
 
 ```
@@ -52,11 +54,27 @@
     
 2. 构建angular
 
+```
+    cd app-ng
+    npm run build
+```
+
 3. 构建ionic
+
+```
+    cd app-ionic
+    npm run build
+```
 
 4. 构建server
 
+```
+    npm run build
+```
+
 5. 发布dist到服务器
+
+dist目录是最终部署的项目文件
 
 6. 通过pm2启动并管理项目
 
