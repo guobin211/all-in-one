@@ -3,5 +3,12 @@
   "integrations": {
     "cordova": {}
   },
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/v1",
+      "proxyUrl" : "https://api.instagram.com/v1"
+    }
+  ]
 }

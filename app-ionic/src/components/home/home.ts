@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
+import { Base64 } from '@ionic-native/base64';
 
 export interface PageConfig {
   color: string;
@@ -14,6 +15,17 @@ export interface PageConfig {
   templateUrl: 'home.html'
 })
 export class HomePage {
+
+  cameraImg: string;
+  /**
+   * 相机设置
+   */
+  options: CameraOptions = {
+    quality: 100,
+    destinationType: this.camera.DestinationType.DATA_URL,
+    encodingType: this.camera.EncodingType.JPEG,
+    mediaType: this.camera.MediaType.PICTURE
+  }
 
   anotherPage: PageConfig[] = [
     {
@@ -45,10 +57,16 @@ export class HomePage {
     },
     {
       color: 'primary', path: 'page-badges', text: 'Badges'
-    }
+    },
+    {
+      color: 'danger', path: 'page-antv', text: '数据图表'
+    }, {
+      color: 'light', path: 'page-file', text: '文件系统'
+    },
   ]
   constructor(public navCtrl: NavController,
     private camera: Camera,
+    private base64: Base64,
     private alertCtrl: AlertController) {
 
   }
@@ -78,21 +96,24 @@ export class HomePage {
   }
 
   onClickNativeCamare() {
-    const options: CameraOptions = {
-      quality: 100,
-      destinationType: this.camera.DestinationType.FILE_URI,
-      encodingType: this.camera.EncodingType.JPEG,
-      mediaType: this.camera.MediaType.PICTURE
-    }
 
-    this.camera.getPicture(options).then((imageData) => {
-      // imageData is either a base64 encoded string or a file URI
-      // If it's base64 (DATA_URL):
-      let base64Image = 'data:image/jpeg;base64,' + imageData;
-      console.log(base64Image);
+    /**
+     * 调相机
+     */
+    this.camera.getPicture(this.options).then((imageData) => {
+      /**
+       * 把本地file转base64
+       * @params 'file:///...'
+       */
+      this.base64.encodeFile(imageData).then(base64File => {
+        this.cameraImg = base64File;
+      }).catch(err => {
+        console.log(err);
+      })
     }, (err) => {
       // Handle error
     });
+
   }
 
   onClickNavToAnotherPage(path) {

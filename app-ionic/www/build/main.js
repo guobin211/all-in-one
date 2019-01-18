@@ -1,4 +1,4 @@
-webpackJsonp([12],{
+webpackJsonp([14],{
 
 /***/ 109:
 /***/ (function(module, exports) {
@@ -21,52 +21,60 @@ webpackEmptyAsyncContext.id = 109;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"../pages/antv/antv.module": [
+		274,
+		13
+	],
 	"../pages/badges/badges.module": [
-		270,
-		11
+		275,
+		12
 	],
 	"../pages/card/card.module": [
-		271,
-		10
+		276,
+		11
 	],
 	"../pages/check/check.module": [
-		272,
-		9
+		277,
+		10
 	],
 	"../pages/date/date.module": [
-		273,
-		8
+		278,
+		9
 	],
 	"../pages/fab/fab.module": [
-		274,
+		279,
+		8
+	],
+	"../pages/file/file.module": [
+		280,
 		7
 	],
 	"../pages/icon/icon.module": [
-		275,
+		281,
 		6
 	],
 	"../pages/layout/layout.module": [
-		276,
+		282,
 		5
 	],
 	"../pages/list/list.module": [
-		277,
+		283,
 		4
 	],
 	"../pages/loading/loading.module": [
-		278,
+		284,
 		3
 	],
 	"../pages/preload/preload.module": [
-		279,
+		285,
 		2
 	],
 	"../pages/tabs/tabs.module": [
-		280,
+		286,
 		1
 	],
 	"../pages/toast/toast.module": [
-		281,
+		287,
 		0
 	]
 };
@@ -92,8 +100,9 @@ module.exports = webpackAsyncContext;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_base64__ = __webpack_require__(195);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -107,11 +116,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var HomePage = /** @class */ (function () {
-    function HomePage(navCtrl, camera, alertCtrl) {
+    function HomePage(navCtrl, camera, base64, alertCtrl) {
         this.navCtrl = navCtrl;
         this.camera = camera;
+        this.base64 = base64;
         this.alertCtrl = alertCtrl;
+        /**
+         * 相机设置
+         */
+        this.options = {
+            quality: 100,
+            destinationType: this.camera.DestinationType.DATA_URL,
+            encodingType: this.camera.EncodingType.JPEG,
+            mediaType: this.camera.MediaType.PICTURE
+        };
         this.anotherPage = [
             {
                 color: 'primary', path: 'page-fab', text: '分享按钮'
@@ -142,7 +162,12 @@ var HomePage = /** @class */ (function () {
             },
             {
                 color: 'primary', path: 'page-badges', text: 'Badges'
-            }
+            },
+            {
+                color: 'danger', path: 'page-antv', text: '数据图表'
+            }, {
+                color: 'light', path: 'page-file', text: '文件系统'
+            },
         ];
     }
     HomePage.prototype.onClickAlert = function () {
@@ -169,17 +194,20 @@ var HomePage = /** @class */ (function () {
         alert.present();
     };
     HomePage.prototype.onClickNativeCamare = function () {
-        var options = {
-            quality: 100,
-            destinationType: this.camera.DestinationType.FILE_URI,
-            encodingType: this.camera.EncodingType.JPEG,
-            mediaType: this.camera.MediaType.PICTURE
-        };
-        this.camera.getPicture(options).then(function (imageData) {
-            // imageData is either a base64 encoded string or a file URI
-            // If it's base64 (DATA_URL):
-            var base64Image = 'data:image/jpeg;base64,' + imageData;
-            console.log(base64Image);
+        var _this = this;
+        /**
+         * 调相机
+         */
+        this.camera.getPicture(this.options).then(function (imageData) {
+            /**
+             * 把本地file转base64
+             * @params 'file:///...'
+             */
+            _this.base64.encodeFile(imageData).then(function (base64File) {
+                _this.cameraImg = base64File;
+            }).catch(function (err) {
+                console.log(err);
+            });
         }, function (err) {
             // Handle error
         });
@@ -189,25 +217,27 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/macbook/Documents/GitHub/all-in-one/app-ionic/src/components/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>Ionic Start</h3>\n  <button ion-button secondary menuToggle>侧边导航</button>\n\n  <button ion-button color="danger" (click)="onClickAlert()">弹窗提示</button>\n\n  <button ion-button color="light" (click)="onClickNativeCamare()">原生相机</button>\n\n  <button ion-button [color]="item.color" *ngFor="let item of anotherPage" (click)="onClickNavToAnotherPage(item.path)">{{item.text}}</button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/macbook/Documents/GitHub/all-in-one/app-ionic/src/components/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/macbook/Documents/GitHub/all-in-one/app-ionic/src/components/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>Ionic Start</h3>\n  <button ion-button secondary menuToggle>侧边导航</button>\n\n  <button ion-button color="danger" (click)="onClickAlert()">弹窗提示</button>\n\n  <button ion-button color="light" (click)="onClickNativeCamare()">原生相机</button>\n\n  <button ion-button [color]="item.color" *ngFor="let item of anotherPage" (click)="onClickNavToAnotherPage(item.path)">{{item.text}}</button>\n\n  <img *ngIf="cameraImg" id="myImage" [src]="cameraImg" alt="cameraImg" width="100%" height="100px">\n</ion-content>\n'/*ion-inline-end:"/Users/macbook/Documents/GitHub/all-in-one/app-ionic/src/components/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_camera__["a" /* Camera */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_base64__["a" /* Base64 */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
     ], HomePage);
     return HomePage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=home.js.map
 
 /***/ }),
 
-/***/ 195:
+/***/ 196:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -244,13 +274,13 @@ var ListComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 196:
+/***/ 199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(222);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -258,20 +288,24 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 219:
+/***/ 222:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(272);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_home_home__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_camera__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_list_list__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_list_list__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_status_bar__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_camera__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_image_picker__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_file__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_device__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_base64__ = __webpack_require__(195);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -281,6 +315,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+/**
+ * app page
+ */
+
+
+
+/**
+ * native plagin
+ */
 
 
 
@@ -295,22 +339,25 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_4__components_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_8__components_list_list__["a" /* ListComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__components_list_list__["a" /* ListComponent */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {
+                    backButtonText: '返回',
                     monthNames: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
                     monthShortNames: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
                     dayNames: ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'],
                     dayShortNames: ['7', '1', '2', '3', '4', '5', '6'],
                 }, {
                     links: [
+                        { loadChildren: '../pages/antv/antv.module#AntvPageModule', name: 'page-antv', segment: 'antv', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/badges/badges.module#BadgesPageModule', name: 'page-badges', segment: 'badges', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/card/card.module#CardPageModule', name: 'page-card', segment: 'card', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/check/check.module#CheckPageModule', name: 'page-check', segment: 'check', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/date/date.module#DatePageModule', name: 'page-date', segment: 'date', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/fab/fab.module#FabPageModule', name: 'page-fab', segment: 'fab', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/file/file.module#FilePageModule', name: 'page-file', segment: 'file', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/icon/icon.module#IconPageModule', name: 'page-icon', segment: 'icon', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/layout/layout.module#LayoutPageModule', name: 'page-layout', segment: 'layout', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/list/list.module#ListPageModule', name: 'page-list', segment: 'list', priority: 'low', defaultHistory: [] },
@@ -325,12 +372,16 @@ var AppModule = /** @class */ (function () {
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_4__components_home_home__["a" /* HomePage */],
-                __WEBPACK_IMPORTED_MODULE_8__components_list_list__["a" /* ListComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__components_list_list__["a" /* ListComponent */],
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__["a" /* StatusBar */],
-                __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__["a" /* SplashScreen */],
-                __WEBPACK_IMPORTED_MODULE_7__ionic_native_camera__["a" /* Camera */],
+                __WEBPACK_IMPORTED_MODULE_7__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_8__ionic_native_camera__["a" /* Camera */],
+                __WEBPACK_IMPORTED_MODULE_9__ionic_native_image_picker__["a" /* ImagePicker */],
+                __WEBPACK_IMPORTED_MODULE_10__ionic_native_file__["a" /* File */],
+                __WEBPACK_IMPORTED_MODULE_11__ionic_native_device__["a" /* Device */],
+                __WEBPACK_IMPORTED_MODULE_12__ionic_native_base64__["a" /* Base64 */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
             ]
         })
@@ -342,17 +393,17 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 262:
+/***/ 272:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_home_home__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_list_list__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_list_list__ = __webpack_require__(196);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -440,5 +491,5 @@ var MyApp = /** @class */ (function () {
 
 /***/ })
 
-},[196]);
+},[199]);
 //# sourceMappingURL=main.js.map

@@ -17,4 +17,5 @@
 
   <button ion-button [color]="item.color" *ngFor="let item of anotherPage" (click)="onClickNavToAnotherPage(item.path)">{{item.text}}</button>
 
+  <img *ngIf="cameraImg" id="myImage" [src]="cameraImg" alt="cameraImg" width="100%" height="100px">
 </ion-content>
