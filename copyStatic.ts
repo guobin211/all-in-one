@@ -20,10 +20,10 @@ shell.cp('-R', 'src/public/fonts', 'dist/public/fonts');
 shell.cp('-R', 'src/public/api', 'dist/public/api');
 shell.cp('-R', 'src/routes/apiv1.json', 'dist/public/api');
 /**
- * pc
+ * copy pc
  */
 shell.cp('-R', 'app-ng/dist', 'dist/public/pc');
 /**
- * h5
+ * copy h5
  */
 shell.cp('-R', 'app-ionic/www', 'dist/public/h5');
