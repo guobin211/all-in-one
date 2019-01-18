@@ -25673,3 +25673,37 @@ ion-navbar.toolbar {
   min-height: calc(46px + constant(safe-area-inset-bottom));
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
+
+page-icon .icons-basic-page ion-icon {
+  font-size: 50px;
+}
+
+page-icon .icons-basic-page ion-row {
+  height: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+page-icon .icons-basic-page ion-col {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  text-align: center;
+  padding: 10px 5px;
+}
+
+page-layout .grid-basic-page ion-col div {
+  background-color: #f0f5ff;
+  border: 1px solid #e6e9ee;
+  border-radius: 2px;
+  padding: 5px;
+  text-align: center;
+}
+
+page-layout .grid-basic-page p {
+  padding: 10px 0 0 10px !important;
+  margin: 0;
+}

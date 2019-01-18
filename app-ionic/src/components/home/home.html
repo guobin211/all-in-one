@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Ionic Start</h3>
+  <button ion-button secondary menuToggle>侧边导航</button>
+
+  <button ion-button color="danger" (click)="onClickAlert()">弹窗提示</button>
+
+  <button ion-button color="light" (click)="onClickNativeCamare()">原生相机</button>
+
+  <button ion-button [color]="item.color" *ngFor="let item of anotherPage" (click)="onClickNavToAnotherPage(item.path)">{{item.text}}</button>
+
+</ion-content>

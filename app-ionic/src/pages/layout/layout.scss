@@ -1,0 +1,18 @@
+page-layout {
+  .grid-basic-page {
+
+    ion-col div {
+      background-color: #f0f5ff;
+      border: 1px solid #e6e9ee;
+      border-radius: 2px;
+      padding: 5px;
+      text-align: center;
+    }
+
+    p {
+      padding: 10px 0 0 10px !important;
+      margin: 0;
+    }
+
+  }
+}
