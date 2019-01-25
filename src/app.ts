@@ -12,13 +12,13 @@ import path from 'path';
  *  import router class
  */
 import { UserRouter } from './routes/user.router';
-
+import { ApiRouter} from './routes/api.router';
 
 /**
  * build routers
  */
 const userRoutes = new UserRouter();
-
+const apiRouter = new ApiRouter();
 
 /**
  * express server
@@ -75,6 +75,7 @@ class Server {
         const router: express.Router = express.Router();
         this.app.use('/', router);
         this.app.use('/user', userRoutes.router);
+        this.app.use('/api', apiRouter.router)
     }
 
 }

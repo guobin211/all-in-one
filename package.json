@@ -18,6 +18,7 @@
     "dotenv": "6.2.0",
     "express": "4.16.4",
     "helmet": "3.15.0",
+    "jsonwebtoken": "^8.4.0",
     "mongoose": "5.3.16",
     "morgan": "1.9.1",
     "shelljs": "0.8.3"
@@ -31,6 +32,7 @@
     "@types/debug": "0.0.31",
     "@types/express": "4.16.0",
     "@types/helmet": "0.0.42",
+    "@types/jsonwebtoken": "^8.3.0",
     "@types/mongoose": "5.3.4",
     "@types/morgan": "1.7.35",
     "@types/node": "8.5.5",
