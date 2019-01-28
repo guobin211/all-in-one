@@ -4,8 +4,9 @@
 
 [![Fram-Design](https://github.com/guobin211/all-in-one/blob/master/images/fram.jpg)](https://github.com/guobin211/all-in-one)
 
+### nodejs后端提供api服务，支持多接点部署。
 
-完整的跨平台项目
+> 完整的跨平台项目
 
 ```  
     桌面: web + win + mac
