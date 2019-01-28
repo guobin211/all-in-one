@@ -13,7 +13,7 @@
 
 ### 移动端预览
 
-<figure class="half">
+<figure style="float: left">
     <img src="https://github.com/guobin211/all-in-one/blob/master/images/h5-chart.png" width="45%">
     <img src="https://github.com/guobin211/all-in-one/blob/master/images/h5-list.png" width="45%">
 </figure>
