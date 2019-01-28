@@ -1,14 +1,14 @@
 # all-in-one
 
-### 项目设计结构图
+### 项目结构
 
-[![Fram-Design](https://github.com/guobin211/all-in-one/blob/master/images/fram.png)](https://github.com/guobin211/all-in-one)
+[![Fram-Design](https://github.com/guobin211/all-in-one/blob/master/images/fram.jpg)](https://github.com/guobin211/all-in-one)
 
 
 完整的跨平台项目
 
 ```  
-    桌面: web + win + mac + linux
+    桌面: web + win + mac
 
     移动: h5 + android + ios
 
