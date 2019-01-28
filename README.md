@@ -1,12 +1,6 @@
 # all-in-one
 
-### 项目结构
-
-[![Fram-Design](https://github.com/guobin211/all-in-one/blob/master/images/fram.jpg)](https://github.com/guobin211/all-in-one)
-
-### nodejs后端提供api服务，支持多接点部署。
-
-> 完整的跨平台项目
+### 完整的跨平台项目
 
 ```  
     桌面: web + win + mac
@@ -16,6 +10,16 @@
     后端: nodejs + mongodb + nginx + pm2
 
 ```
+
+### 移动端预览
+
+<figure class="half">
+    <img src="https://github.com/guobin211/all-in-one/blob/master/images/h5-chart.png">
+    <img src="https://github.com/guobin211/all-in-one/blob/master/images/h5-list.png">
+</figure>
+
+### 桌面端预览
+
 
 ### 开发测试
 
@@ -83,4 +87,11 @@
 dist目录是最终部署的项目文件
 
 6. 通过pm2启动并管理项目
+
+
+### 项目结构
+
+[![Fram-Design](https://github.com/guobin211/all-in-one/blob/master/images/fram.jpg)](https://github.com/guobin211/all-in-one)
+
+
 

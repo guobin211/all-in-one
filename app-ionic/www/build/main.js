@@ -459,7 +459,7 @@ var MyApp = /** @class */ (function () {
         this.platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
-            _this.statusBar.styleDefault();
+            _this.statusBar.backgroundColorByHexString('#ffffff');
             _this.splashScreen.hide();
         });
     };
