@@ -12,6 +12,7 @@ app-ionic/plugins
 app-ionic/platforms
 app-ionic/.sourcemaps
 app-ionic/www/*
+app-ionic4/node_modules
 
 app-angular/dist
 app-angular/release
