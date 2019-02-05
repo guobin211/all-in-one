@@ -16,11 +16,11 @@ app-ionic3/platforms
 app-ionic3/.sourcemaps
 app-ionic3/www/*
 
-app-ionic4/node_modules
-app-ionic4/plugins
-app-ionic4/platforms
-app-ionic4/.sourcemaps
-app-ionic4/www/*
+app-ionic/node_modules
+app-ionic/plugins
+app-ionic/platforms
+app-ionic/.sourcemaps
+app-ionic/www/*
 
 app-angular/dist
 app-angular/release

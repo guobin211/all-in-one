@@ -1,0 +1,7 @@
+{
+  "name": "all-in-one-f",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
