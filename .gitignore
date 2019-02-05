@@ -6,13 +6,21 @@ yarn-debug.log*
 yarn-error.log*
 
 #node_modules
-app-angular/node_modules
-app-ionic/node_modules
-app-ionic/plugins
-app-ionic/platforms
-app-ionic/.sourcemaps
-app-ionic/www/*
+app-ng/node_modules
+app-ng/release
+app-ng/dist
+
+app-ionic3/node_modules
+app-ionic3/plugins
+app-ionic3/platforms
+app-ionic3/.sourcemaps
+app-ionic3/www/*
+
 app-ionic4/node_modules
+app-ionic4/plugins
+app-ionic4/platforms
+app-ionic4/.sourcemaps
+app-ionic4/www/*
 
 app-angular/dist
 app-angular/release

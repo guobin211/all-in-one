@@ -26,4 +26,6 @@ shell.cp('-R', 'app-ng/dist', 'dist/public/pc');
 /**
  * copy h5
  */
-shell.cp('-R', 'app-ionic/www', 'dist/public/h5');
+shell.cp('-R', 'app-ionic3/www', 'dist/public/h5');
+shell.cp('-R', 'app-ionic4/www', 'dist/public/h5b');
+

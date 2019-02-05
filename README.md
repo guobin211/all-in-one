@@ -38,9 +38,11 @@
 ### 开发目录结构
 
 ```
-    app-angular   -- angular + electron  桌面端
+    app-ng   -- angular + electron  桌面端
       
-    app-ionic     -- ionic + angular  移动端
+    app-ionic3     -- ionic3 + cordova  移动端
+    
+    app-ionic4    -- ionic4 + cordova  移动端
       
     src           -- nodejs 服务端
 
