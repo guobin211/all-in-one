@@ -2,70 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="641e3b90-1ccc-4810-bcd4-a618e4aec3da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/icon/drawable-hdpi-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/icon/drawable-ldpi-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/icon/drawable-mdpi-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/icon/drawable-xhdpi-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/icon/drawable-xxhdpi-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/icon/drawable-xxxhdpi-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/splash/drawable-land-hdpi-screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/splash/drawable-land-ldpi-screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/splash/drawable-land-mdpi-screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/splash/drawable-land-xhdpi-screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/splash/drawable-land-xxhdpi-screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/splash/drawable-land-xxxhdpi-screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/splash/drawable-port-hdpi-screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/splash/drawable-port-ldpi-screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/splash/drawable-port-mdpi-screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/splash/drawable-port-xhdpi-screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/splash/drawable-port-xxhdpi-screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/android/splash/drawable-port-xxxhdpi-screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-1024.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-40.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-40@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-40@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-50@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-60.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-60@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-60@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-72.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-72@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-76.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-76@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-83.5@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-small@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon-small@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/icon/icon@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/splash/Default-568h@2x~iphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/splash/Default-667h.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/splash/Default-736h.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/splash/Default-Landscape-736h.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/splash/Default-Landscape@2x~ipad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/splash/Default-Landscape@~ipadpro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/splash/Default-Landscape~ipad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/splash/Default-Portrait@2x~ipad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/splash/Default-Portrait@~ipadpro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/splash/Default-Portrait~ipad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/splash/Default@2x~iphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/splash/Default@2x~universal~anyany.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/ios/splash/Default~iphone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-ionic4/resources/splash.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-ionic4" beforeDir="false" afterPath="$PROJECT_DIR$/app-ionic4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-ionic4/ionic.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/app-ionic4/ionic.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-ionic4/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app-ionic4/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-ionic4/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app-ionic4/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app-ionic4/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app-ionic4/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/copyStatic.ts" beforeDir="false" afterPath="$PROJECT_DIR$/copyStatic.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -102,9 +39,10 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="822" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -168,22 +106,28 @@
       <option name="presentableId" value="Default" />
       <updated>1549335638957</updated>
       <workItem from="1549335641169" duration="351000" />
+      <workItem from="1549336322677" duration="92000" />
     </task>
+    <task id="LOCAL-00001" summary="ionic 4">
+      <created>1549336365768</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1549336365768</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351000" />
+    <option name="totallyTimeSpent" value="443000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="822" extended-state="6" />
     <layout>
-      <window_info id="npm" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -191,11 +135,18 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Mongo Explorer" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3288948" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Mongo Explorer" order="3" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ionic 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="ionic 4" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app-ionic4/resources/README.md">
@@ -231,7 +182,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
+        <state relative-caret-position="23">
           <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
         </state>
       </provider>
