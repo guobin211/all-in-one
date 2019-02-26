@@ -25,7 +25,8 @@ const routes: Routes = [
   { path: 'grid', loadChildren: './pages/grid/grid.module#GridPageModule' },
   { path: 'icons', loadChildren: './pages/icons/icons.module#IconsPageModule' },
   { path: 'input', loadChildren: './pages/input/input.module#InputPageModule' },
-  { path: 'antv', loadChildren: './pages/antv/antv.module#AntvPageModule' }
+  { path: 'antv', loadChildren: './pages/antv/antv.module#AntvPageModule' },
+  { path: 'threed', loadChildren: './pages/threed/threed.module#ThreedPageModule' }
 ];
 
 @NgModule({
