@@ -84,6 +84,11 @@ export class AppComponent {
       title: 'Table',
       url: '/threed',
       icon: 'desktop'
+    },
+    {
+      title: 'Tabs',
+      url: '/tabs',
+      icon: 'cube'
     }
   ];
 

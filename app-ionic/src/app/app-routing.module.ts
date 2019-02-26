@@ -27,7 +27,8 @@ const routes: Routes = [
   { path: 'input', loadChildren: './pages/input/input.module#InputPageModule' },
   { path: 'antv', loadChildren: './pages/antv/antv.module#AntvPageModule' },
   { path: 'threed', loadChildren: './pages/threed/threed.module#ThreedPageModule' },
-  { path: 'video', loadChildren: './pages/video/video.module#VideoPageModule' }
+  { path: 'video', loadChildren: './pages/video/video.module#VideoPageModule' },
+  { path: 'tabs', loadChildren: './pages/tabs/tabs.module#TabsPageModule' }
 ];
 
 @NgModule({
