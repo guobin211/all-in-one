@@ -11,6 +11,9 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { IonicConfig } from '@ionic/core';
 
+import { Camera } from '@ionic-native/camera/ngx';
+
+
 const config: IonicConfig = {
   backButtonText: '返回'
 }
@@ -32,6 +35,7 @@ const config: IonicConfig = {
   providers: [
     StatusBar,
     SplashScreen,
+    Camera,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

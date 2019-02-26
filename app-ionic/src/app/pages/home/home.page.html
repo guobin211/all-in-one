@@ -21,4 +21,10 @@
       </ion-card-content>
     </ion-card>
 
+    <ion-button color="primary" (click)="openCamare()">相机</ion-button>
+
+    <div *ngIf="current">
+      <img [src]="current" alt="camara" width="100px" height="100px">
+    </div>
+
 </ion-content>
