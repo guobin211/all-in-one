@@ -9,12 +9,23 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
+    loadChildren: './pages/home/home.module#HomePageModule'
   },
   {
     path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  }
+    loadChildren: './pages/list/list.module#ListPageModule'
+  },
+  { path: 'button', loadChildren: './pages/button/button.module#ButtonPageModule' },
+  { path: 'action', loadChildren: './pages/action/action.module#ActionPageModule' },
+  { path: 'alert', loadChildren: './pages/alert/alert.module#AlertPageModule' },
+  { path: 'badge', loadChildren: './pages/badge/badge.module#BadgePageModule' },
+  { path: 'card', loadChildren: './pages/card/card.module#CardPageModule' },
+  { path: 'checkbox', loadChildren: './pages/checkbox/checkbox.module#CheckboxPageModule' },
+  { path: 'datetime', loadChildren: './pages/datetime/datetime.module#DatetimePageModule' },
+  { path: 'grid', loadChildren: './pages/grid/grid.module#GridPageModule' },
+  { path: 'icons', loadChildren: './pages/icons/icons.module#IconsPageModule' },
+  { path: 'input', loadChildren: './pages/input/input.module#InputPageModule' },
+  { path: 'antv', loadChildren: './pages/antv/antv.module#AntvPageModule' }
 ];
 
 @NgModule({

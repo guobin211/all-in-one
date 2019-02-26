@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Alert
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-button shape="round" (click)="presentAlert()">show alert</ion-button>
+
+  <ion-button shape="round" color="secondary" (click)="presentAlertMultipleButtons()">show alert</ion-button>
+
+  <ion-button shape="round" color="tertiary" (click)="presentAlertConfirm()">show alert</ion-button>
+
+  <ion-button shape="round" color="success" (click)="presentAlertPrompt()">show alert</ion-button>
+
+  <ion-button shape="round" color="warning" (click)="presentAlertRadio()">show alert</ion-button>
+
+  <ion-button shape="round" color="danger" (click)="presentAlertCheckbox()">show alert</ion-button>
+</ion-content>

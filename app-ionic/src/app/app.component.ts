@@ -16,9 +16,64 @@ export class AppComponent {
       icon: 'home'
     },
     {
+      title: 'Chart',
+      url: '/antv',
+      icon: 'basket'
+    },
+    {
       title: 'List',
       url: '/list',
       icon: 'list'
+    },
+    {
+      title: 'Button',
+      url: '/button',
+      icon: 'albums'
+    },
+    {
+      title: 'Action',
+      url: '/action',
+      icon: 'hand'
+    },
+    {
+      title: 'Alert',
+      url: '/alert',
+      icon: 'alert'
+    },
+    {
+      title: 'Badge',
+      url: '/badge',
+      icon: 'at'
+    },
+    {
+      title: 'Card',
+      url: '/card',
+      icon: 'book'
+    },
+    {
+      title: 'CheckBox',
+      url: '/checkbox',
+      icon: 'checkmark'
+    },
+    {
+      title: 'DateTime',
+      url: '/datetime',
+      icon: 'calendar'
+    },
+    {
+      title: 'Grid',
+      url: '/grid',
+      icon: 'apps'
+    },
+    {
+      title: 'Icons',
+      url: '/icons',
+      icon: 'at'
+    },
+    {
+      title: 'Input',
+      url: '/input',
+      icon: 'create'
     }
   ];
 

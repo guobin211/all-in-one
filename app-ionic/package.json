@@ -1,8 +1,8 @@
 {
-  "name": "all-in-one-f",
+  "name": "all-in-one",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Ionic Material",
+  "homepage": "https://github.com/guobin211/all-in-one",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -15,8 +15,10 @@
   "dependencies": {
     "@angular/common": "^7.2.2",
     "@angular/core": "^7.2.2",
+    "@angular/cdk": "^7.2.2",
     "@angular/forms": "^7.2.2",
     "@angular/http": "^7.2.2",
+    "@angular/animations": "^7.2.2",
     "@angular/material": "^7.2.2",
     "@angular/platform-browser": "^7.2.2",
     "@angular/platform-browser-dynamic": "^7.2.2",
