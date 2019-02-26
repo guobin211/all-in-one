@@ -79,6 +79,11 @@ export class AppComponent {
       title: 'Input',
       url: '/input',
       icon: 'create'
+    },
+    {
+      title: 'Table',
+      url: '/threed',
+      icon: 'desktop'
     }
   ];
 

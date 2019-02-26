@@ -16,8 +16,11 @@ const config: IonicConfig = {
 }
 
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
+  declarations: [
+    AppComponent,
+  ],
+  entryComponents: [
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
