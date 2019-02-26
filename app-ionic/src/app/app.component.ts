@@ -21,6 +21,11 @@ export class AppComponent {
       icon: 'basket'
     },
     {
+      title: 'Video',
+      url: '/video',
+      icon: 'arrow-dropright-circle'
+    },
+    {
       title: 'List',
       url: '/list',
       icon: 'list'

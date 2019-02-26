@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./input.page.scss'],
 })
 export class InputPage implements OnInit {
-
+  username;
+  password;
+  isSubmit = false;
   constructor() { }
 
   ngOnInit() {
   }
 
+  onSubmit() {
+    console.log('ok' + this.username + this.password);
+    this.isSubmit = !this.isSubmit;
+  }
 }

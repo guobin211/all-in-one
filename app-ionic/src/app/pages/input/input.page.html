@@ -12,11 +12,17 @@
 <ion-content padding>
   <ion-item>
     <ion-label>用户名：</ion-label>
-    <ion-input></ion-input>
+    <ion-input [(ngModel)]="username"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label>密码：</ion-label>
-    <ion-input></ion-input>
+    <ion-input [(ngModel)]="password"></ion-input>
   </ion-item>
-  <ion-button color="primary" expand="full">提交</ion-button>
+
+  <ion-button expand="block" (click)="onSubmit()">提交</ion-button>
+
+  <div *ngIf="isSubmit" style="text-align: center">
+    <h5>{{username}}</h5>
+    <h5>{{password}}</h5>
+  </div>
 </ion-content>

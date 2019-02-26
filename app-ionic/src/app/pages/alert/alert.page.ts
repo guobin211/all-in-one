@@ -17,7 +17,7 @@ export class AlertPage implements OnInit {
       header: 'Alert',
       subHeader: 'Subtitle',
       message: 'This is an alert message.',
-      buttons: ['OK']
+      buttons: ['确定']
     });
 
     await alert.present();
@@ -28,7 +28,7 @@ export class AlertPage implements OnInit {
       header: 'Alert',
       subHeader: 'Subtitle',
       message: 'This is an alert message.',
-      buttons: ['Cancel', 'Open Modal', 'Delete']
+      buttons: ['取消', '打开', '删除']
     });
 
     await alert.present();
@@ -40,14 +40,14 @@ export class AlertPage implements OnInit {
       message: 'Message <strong>text</strong>!!!',
       buttons: [
         {
-          text: 'Cancel',
+          text: '取消',
           role: 'cancel',
           cssClass: 'secondary',
           handler: (blah) => {
             console.log('Confirm Cancel: blah');
           }
         }, {
-          text: 'Okay',
+          text: '确定',
           handler: () => {
             console.log('Confirm Okay');
           }
@@ -105,14 +105,14 @@ export class AlertPage implements OnInit {
       ],
       buttons: [
         {
-          text: 'Cancel',
+          text: '取消',
           role: 'cancel',
           cssClass: 'secondary',
           handler: () => {
             console.log('Confirm Cancel');
           }
         }, {
-          text: 'Ok',
+          text: '确定',
           handler: () => {
             console.log('Confirm Ok');
           }
@@ -167,14 +167,14 @@ export class AlertPage implements OnInit {
       ],
       buttons: [
         {
-          text: 'Cancel',
+          text: '取消',
           role: 'cancel',
           cssClass: 'secondary',
           handler: () => {
             console.log('Confirm Cancel');
           }
         }, {
-          text: 'Ok',
+          text: '确定',
           handler: () => {
             console.log('Confirm Ok');
           }
@@ -234,14 +234,14 @@ export class AlertPage implements OnInit {
       ],
       buttons: [
         {
-          text: 'Cancel',
+          text: '取消',
           role: 'cancel',
           cssClass: 'secondary',
           handler: () => {
             console.log('Confirm Cancel');
           }
         }, {
-          text: 'Ok',
+          text: '确定',
           handler: () => {
             console.log('Confirm Ok');
           }

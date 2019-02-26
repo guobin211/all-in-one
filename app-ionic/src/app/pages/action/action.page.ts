@@ -41,7 +41,7 @@ export class ActionPage implements OnInit {
           console.log('Favorite clicked');
         }
       }, {
-        text: 'Cancel',
+        text: '取消',
         icon: 'close',
         role: 'cancel',
         handler: () => {

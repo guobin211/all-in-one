@@ -13,7 +13,7 @@ export class AntvPage implements OnInit {
 
   ngOnInit() {
     this.pixel = window.devicePixelRatio;
-    this.width = document.getElementById("hooks").clientWidth;
+    this.width = window.innerWidth - 10;
     this.fetchData();
   }
   renderChart() {

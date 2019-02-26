@@ -9,7 +9,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { IonicConfig } from '@ionic/core';
 
+const config: IonicConfig = {
+  backButtonText: '返回'
+}
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     BrowserAnimationsModule,
     IonicModule.forRoot(
-
+      config
     ),
     AppRoutingModule,
   ],
