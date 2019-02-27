@@ -1,1 +1,23 @@
-<button mat-raised-button color="primary" (click)="getData()">fetch</button>
+<mat-grid-list cols="1" rowHeight="2:1">
+  <mat-grid-tile>
+    <div id="container"></div>
+  </mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list cols="4" rowHeight="2:1">
+  <mat-grid-tile>
+    <button type="button" color="primary" mat-raised-button (click)="renderMap()">百度地图</button>
+    <button type="button" color="primary" mat-raised-button (click)="getData()">获取定位</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button type="button" color="primary" mat-raised-button >消息推送</button>
+    <button type="button" color="primary" mat-raised-button >视频通话</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button type="button" color="primary" mat-raised-button >文件上传</button>
+    <button type="button" color="primary" mat-raised-button >文件下载</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button type="button" color="primary" mat-raised-button >启动QQ</button>
+    <button type="button" color="primary" mat-raised-button >启动邮箱</button>
+  </mat-grid-tile>
+</mat-grid-list>

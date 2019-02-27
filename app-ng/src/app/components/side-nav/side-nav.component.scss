@@ -1,0 +1,8 @@
+@import"./../../styles/color.scss";
+mat-list-item{
+  border-bottom: 1pt solid #cccccc;
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+}

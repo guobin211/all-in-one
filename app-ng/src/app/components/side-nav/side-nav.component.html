@@ -1,5 +1,5 @@
 <mat-list>
-  <mat-list-item> Pepper </mat-list-item>
-  <mat-list-item> Salt </mat-list-item>
-  <mat-list-item> Paprika </mat-list-item>
+  <mat-list-item *ngFor="let item of sideNavData">
+    <a [routerLink]="['/' + item.path]" routerLinkActive="router-link-active">{{item.text}}</a>
+  </mat-list-item>
 </mat-list>
