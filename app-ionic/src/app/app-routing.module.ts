@@ -2,19 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-  {
-    path: 'home',
-    loadChildren: './pages/home/home.module#HomePageModule'
-  },
-  {
-    path: 'list',
-    loadChildren: './pages/list/list.module#ListPageModule'
-  },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
+  { path: 'list', loadChildren: './pages/list/list.module#ListPageModule' },
   { path: 'button', loadChildren: './pages/button/button.module#ButtonPageModule' },
   { path: 'action', loadChildren: './pages/action/action.module#ActionPageModule' },
   { path: 'alert', loadChildren: './pages/alert/alert.module#AlertPageModule' },
@@ -35,4 +25,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
