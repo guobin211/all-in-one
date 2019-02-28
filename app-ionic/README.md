@@ -13,3 +13,13 @@
     ionic cordova build android
 
 ```
+
+### 生成组件
+
+```sh
+
+    ionic g page flod/name
+
+```
+
+### 添加插件
