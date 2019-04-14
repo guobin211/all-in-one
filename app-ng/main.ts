@@ -2,7 +2,7 @@ import { app, BrowserWindow, screen } from 'electron';
 import * as path from 'path';
 import * as url from 'url';
 
-let win, serve;
+let win: BrowserWindow, serve;
 const args = process.argv.slice(1);
 serve = args.some(val => val === '--serve');
 
@@ -24,12 +24,15 @@ function createWindow() {
       electron: require(`${__dirname}/node_modules/electron`)
     });
     win.loadURL('http://localhost:4200');
+
   } else {
-    win.loadURL(url.format({
-      pathname: path.join(__dirname, 'dist/index.html'),
-      protocol: 'file:',
-      slashes: true
-    }));
+    // win.loadURL(url.format({
+    //   pathname: path.join(__dirname, 'dist/index.html'),
+    //   protocol: 'file:',
+    //   slashes: true
+    // }));
+    
+    win.loadURL('http://localhost:8081');
   }
 
   win.webContents.openDevTools();
@@ -64,6 +67,8 @@ try {
     // On OS X it's common to re-create a window in the app when the
     // dock icon is clicked and there are no other windows open.
     if (win === null) {
+
+      // check version
       createWindow();
     }
   });
