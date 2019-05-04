@@ -31,7 +31,7 @@ function createWindow() {
     //   protocol: 'file:',
     //   slashes: true
     // }));
-    
+
     win.loadURL('http://localhost:8081');
   }
 

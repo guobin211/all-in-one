@@ -15,7 +15,7 @@ export function checkJWT(req: Request, res: Response, next: NextFunction) {
     res.send('需要验证token')
   }
   // @ts-ignore
-  let token: string = req.headers.authorization.split(" ")[1];
+  let token: string = req.headers.authorization.split(' ')[1];
   if (token === null) {
     res.send('token必须要')
   }
@@ -40,7 +40,7 @@ export class ApiRouter {
     this.router.post('/', this.sendToken)
   }
 
-  checkToken(req: any, res: Response): void{
+  checkToken(req: any, res: Response): void {
     if (req.id) {
       res.send({id: req.id, message: '验证成功！'})
     } else {
