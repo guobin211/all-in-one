@@ -4,26 +4,32 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
+
 
 #node_modules
 app-ng/node_modules
 app-ng/release
 app-ng/dist
+app-ng/package-lock.json
 
 app-ionic3/node_modules
 app-ionic3/plugins
 app-ionic3/platforms
 app-ionic3/.sourcemaps
 app-ionic3/www/*
+app-ionic3/package-lock.json
 
 app-ionic/node_modules
 app-ionic/plugins
 app-ionic/platforms
 app-ionic/.sourcemaps
 app-ionic/www/*
+app-ionic/package-lock.json
 
 app-angular/dist
 app-angular/release
+app-angular/package-lock.json
 
 #prod
 dist/
